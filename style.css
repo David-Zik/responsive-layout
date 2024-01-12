@@ -29,7 +29,8 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus,
+.nav-toggle:hover {
   opacity: 0.75;
 }
 
@@ -69,7 +70,7 @@ header {
 .nav-bar {
   display: flex;
   justify-content: space-between;
-  padding: 0.8rem 0 0.4rem;
+  padding: 1rem 0 1rem;
 }
 
 .logo {
@@ -80,6 +81,7 @@ header {
 .nav {
   text-align: center;
   margin-top: 3em;
+  font-family: "Oswald", sans-serif;
 }
 
 .nav__list {
@@ -227,4 +229,137 @@ header {
 
 .footer-reference {
   margin-bottom: 1.5em;
+}
+
+/* media query for 700px to 999px */
+@media (min-width: 700px) {
+  .third-section__aside {
+    display: flex;
+  }
+
+  .third-section__aside--col + .third-section__aside--col {
+    margin-left: 0.5rem;
+  }
+
+  .third-section__aside--col {
+    padding: 0.8em;
+  }
+}
+
+/* media query for 1000px and above */
+@media (min-width: 1000px) {
+  .container {
+    width: 85%;
+    max-width: 1200px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav--visibility {
+    display: block;
+  }
+
+  .nav,
+  .nav__item {
+    margin: 0;
+  }
+
+  .nav__item {
+    margin: 0 1.5rem;
+  }
+
+  .nav {
+    margin-left: auto;
+  }
+
+  .nav__list--main {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .first-section__left {
+    width: 40%;
+    /* border: 1px solid red; */
+  }
+
+  .hero__title {
+    font-size: 5rem;
+  }
+
+  .hero__paragraph {
+    font-size: 1.5rem;
+  }
+
+  .first-section__right {
+    width: 50%;
+    /* border: 1px solid green; */
+  }
+
+  .first-section__right--modify {
+    /* border: 1px solid red; */
+    margin-top: 10rem;
+  }
+
+  .first-section__button {
+    font-size: 1.5em;
+    padding: 0.3em 1.8em;
+  }
+
+  .second-section {
+    text-align: center;
+  }
+
+  .second-section__col {
+    width: 30%;
+  }
+
+  .third-section__main {
+    width: 58%;
+  }
+
+  .third-section__aside {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .third-section__aside--col + .third-section__aside--col {
+    margin-left: 0;
+  }
+
+  .third-section__aside--col {
+    padding: 1em;
+  }
+
+  .forth-section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .forth-section h3 {
+    font-size: 1.3125rem;
+  }
+
+  .forth-section p,
+  .forth-section li {
+    font-size: 1rem;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .footer__left {
+    width: 38%;
+  }
+
+  .footer__right {
+    width: 52%;
+  }
 }

@@ -19,7 +19,7 @@
           <img src="img/logo.svg" alt="Conquering Responsive Layout" />
         </a>
         <nav class="nav nav--visibility">
-          <ul class="nav__list">
+          <ul class="nav__list nav__list--main">
             <li class="nav__item">
               <a class="nav__link" href="#home">home</a>
             </li>
@@ -46,22 +46,30 @@
     </header>
 
     <section class="first-section hero" id="home">
-      <div class="container">
-        <h1 class="hero__title">
-          Responsive layouts
-          <span class="colored-text">don't have to be a struggle</span>
-        </h1>
-        <p class="hero__paragraph">
-          lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod temport incididunt ut labore et dolore magna aliqua.
-        </p>
+      <div class="container row">
+        <div class="first-section__left">
+          <h1 class="hero__title">
+            Responsive layouts
+            <span class="colored-text">don't have to be a struggle</span>
+          </h1>
+        </div>
+        <div class="first-section__right">
+          <div class="first-section__right--modify">
+            <p class="hero__paragraph">
+              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod temport incididunt ut labore et dolore magna aliqua.
+            </p>
 
-        <a class="first-section__button button" href="#/">I want to learn</a>
+            <a class="first-section__button button" href="#/"
+              >I want to learn</a
+            >
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="second-section">
-      <div class="container">
+      <div class="container row">
         <div class="second-section__first second-section__col">
           <h2 class="colored-text">Mobile-first</h2>
           <p>
@@ -90,7 +98,7 @@
     </section>
 
     <section class="third-section">
-      <div class="container">
+      <div class="container row">
         <div class="third-section__main">
           <h2 class="colored-text">It doesn't have to be so hard</h2>
           <p>
@@ -111,21 +119,21 @@
         </div>
 
         <div class="third-section__aside">
-          <div class="third-section__aside third-section__aside--col">
+          <div class="third-section__aside--col">
             <h2>Break it down</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="third-section__aside third-section__aside--col">
+          <div class="third-section__aside--col">
             <h2>Work your way up</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="third-section__aside third-section__aside--col">
+          <div class="third-section__aside--col">
             <h2>Get it done</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -139,8 +147,8 @@
     <section class="forth-section">
       <div class="container">
         <h2>Just scratching the surface</h2>
-        <footer class="footer">
-          <div class="footer__about">
+        <footer class="footer row">
+          <div class="footer__left">
             <h3 class="colored-text">About our company</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -148,53 +156,55 @@
               enim ad minim veniam
             </p>
           </div>
-          <div class="footer__getting-started footer-reference">
-            <h3 class="colored-text">Getting started</h3>
-            <ul class="nav__list">
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">Home</a>
-              </li>
-              <li class="footer__nav--item" id="about">
-                <a class="footer__nav--link" href="#/">About</a>
-              </li>
-              <li class="footer__nav--item" id="contact">
-                <a class="footer__nav--link" href="#/">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__other-things footer-reference">
-            <h3 class="colored-text">Other things</h3>
-            <ul class="nav__list">
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">Lorem ipsum</a>
-              </li>
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">dolor</a>
-              </li>
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">sit amet</a>
-              </li>
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">consectetur</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__and-more footer-reference">
-            <h3 class="colored-text">And more</h3>
-            <ul class="nav__list">
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">Lorem ipsum</a>
-              </li>
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">dolor</a>
-              </li>
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">sit amet</a>
-              </li>
-              <li class="footer__nav--item">
-                <a class="footer__nav--link" href="#/">consectetur</a>
-              </li>
-            </ul>
+          <div class="footer-col footer__right row">
+            <div class="footer__col--right footer-reference">
+              <h3 class="colored-text">Getting started</h3>
+              <ul class="nav__list">
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">Home</a>
+                </li>
+                <li class="footer__nav--item" id="about">
+                  <a class="footer__nav--link" href="#/">About</a>
+                </li>
+                <li class="footer__nav--item" id="contact">
+                  <a class="footer__nav--link" href="#/">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col--right footer-reference">
+              <h3 class="colored-text">Other things</h3>
+              <ul class="nav__list">
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">Lorem ipsum</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">dolor</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">sit amet</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">consectetur</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col--right footer-reference">
+              <h3 class="colored-text">And more</h3>
+              <ul class="nav__list">
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">Lorem ipsum</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">dolor</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">sit amet</a>
+                </li>
+                <li class="footer__nav--item">
+                  <a class="footer__nav--link" href="#/">consectetur</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </footer>
       </div>

@@ -13,8 +13,6 @@ navLinks.forEach((navLink) => {
   });
 });
 
-console.log(allLinks);
-
 allLinks.addEventListener("click", (event) => {
   event.preventDefault();
 });
